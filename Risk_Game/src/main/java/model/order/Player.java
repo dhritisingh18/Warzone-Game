@@ -118,32 +118,32 @@ public class Player {
 
     /**
      * This method checks whether the army to be deployed is valid or not.
-     * @param p_ArmyCount The no of armies to be deployed by the country
+     * @param p_ArmyTotal The no of armies to be deployed by the country
      * @return true if the number of armies are valid and deducted from the reinforcement army else false
      */
-    public boolean deployArmiesForPlayer(int p_ArmyCount) {
-        if (p_ArmyCount < 0 || p_ArmyCount > d_ReinforcementArmies) {
+    public boolean deployArmiesForPlayer(int p_ArmyTotal) {
+        if (p_ArmyTotal < 0 || p_ArmyTotal > d_ReinforcementArmies) {
             return false;
         }
-        d_ReinforcementArmies -= p_ArmyCount;
+        d_ReinforcementArmies -= p_ArmyTotal;
         return true;
     }
 
 
     /**
      *  A method  to create a list of countries assigned to player
-     * @param p_Capture The list of countries given to the player
+     * @param p_Captured The list of countries given to the player
      * @return string
      */
-    public String buildCapturedCountriesList(List<Country> p_Capture) {
-        StringBuilder result = new StringBuilder();
-        for (Country capture : p_Capture) {
-            if (result.length() > 0) {
-                result.append("-");
+    public String buildCapturedCountriesList(List<Country> p_Captured) {
+        StringBuilder sb = new StringBuilder();
+        for (Country captured : p_Captured) {
+            if (sb.length() > 0) {
+                sb.append("-");
             }
-            result.append(capture.getName());
+            sb.append(captured.getName());
         }
-        return result.toString();
+        return sb.toString();
     }
 
 }
