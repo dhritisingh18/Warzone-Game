@@ -19,21 +19,21 @@ import static model.Player.OrderList;
  */
 public class OrderExecution implements GameHandler {
     GameCycle d_NextGameCycle = GameCycle.Reinforcement;
-    GameCycle d_GameCycle = GameCycle.ExecuteOrder;
+    GameCycle d_GameCycle = GameCycle.OrderExecution;
     GameMatrix d_GameGrid;
 
     /**
      *Default Constructor
      *
      */
-    public OrderExecutionPhase(){
+    public void OrderExecutionPhase(){
     	d_GameGrid = GameMatrix.getInstance();
     }
   
     /**
      * This method starts the current game phase
      *
-     * @param p_GamePhase the current game phase
+     * @param p_GameCycle the current game phase
      * @return d_NextGameCycle gives the next game phase
      * @throws Exception when execution fails
      */

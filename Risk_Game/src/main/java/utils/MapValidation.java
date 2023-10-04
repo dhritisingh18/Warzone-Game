@@ -2,26 +2,34 @@ package utils;
 
 import model.Continent;
 import model.Country;
-import model.GameMap;
+import model.GameMatrix;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
 import java.util.stream.IntStream;
 
 /**
- * This class is used to save map as a text file and to check if the map borders are connected or not. 
+ * This class is used to save map as a text file and to check if the map borders are connected or not.
  * It also checks for countries without any connected neighbours.
+ *
  * @author Dhriti Singh
  */
 
 public class MapValidation {
 
-     /**
+    /**
      * Method to check continent status.
+     *
      * @param p_GameMap Obj GameMap has all data
      * @return true if empty continent else false
      */
 
-    public static boolean checkEmptyContinents(GameMap p_GameMap) {
+    public static boolean checkEmptyContinents(GameMatrix p_GameMap) {
         if (p_GameMap.getContinents().isEmpty()) {
             return true;
         }
@@ -39,12 +47,13 @@ public class MapValidation {
 
     /**
      * Method to check if country count meets requirement
-     * @param p_GameMap GameMap obj has all data
+     *
+     * @param p_GameMap      GameMap obj has all data
      * @param p_CountryCount Min country requirement
      * @return returns true if country count equal or more than min req if not false
      */
 
-    private static boolean checkCountOfCountry(GameMap p_GameMap, int p_CountryCount) {
+    private static boolean checkCountOfCountry(GameMatrix p_GameMap, int p_CountryCount) {
         if (p_GameMap.getCountries().size() < p_CountryCount) {
             System.out.println("No of countries are less than what meets requirement" + p_CountryCount + ", Function Invalid.");
             return false;
@@ -54,12 +63,13 @@ public class MapValidation {
 
     /**
      * Method to check for neighbor in list of countries
+     *
      * @param p_GameMap GameMap obj has all data
      * @return will return true if neighbour in country list otherwise false
      */
-    
 
-    private static boolean checkExistenceOfNeighbour(GameMap p_GameMap) {
+
+    private static boolean checkExistenceOfNeighbour(GameMatrix p_GameMap) {
         Map<String, Country> l_Countries = p_GameMap.getCountries();
         Set<String> l_ListOfCountries = new HashSet<>(l_Countries.keySet());
 
@@ -76,13 +86,15 @@ public class MapValidation {
 
         return true;
     }
+
     /**
      * Method to check for copies of continents
+     *
      * @param p_GameMap GameMap obj has all data
-     * @return true if continents copies found otherwise false 
+     * @return true if continents copies found otherwise false
      */
 
-    public static boolean checkDuplicateContinents(GameMap p_GameMap) {
+    public static boolean checkDuplicateContinents(GameMatrix p_GameMap) {
         HashMap<String, Continent> continentNames = p_GameMap.getContinents();
         HashSet<String> uniqueContinentNames = new HashSet<>(continentNames.keySet());
 
@@ -96,12 +108,13 @@ public class MapValidation {
 
     /**
      * Method to check for copies of countries
+     *
      * @param p_GameMap GameMap obj has all data
      * @return true if continent copies found else false
      */
 
 
-    public static boolean checkDuplicateCountries(GameMap p_GameMap) {
+    public static boolean checkDuplicateCountries(GameMatrix p_GameMap) {
         HashMap<String, Country> p_CountryNames = p_GameMap.getCountries();
         HashSet<String> p_Set = new HashSet<>(p_CountryNames.keySet());
 
@@ -115,11 +128,12 @@ public class MapValidation {
 
     /**
      * Method to check for copies of Neighbors
+     *
      * @param p_GameMap GameMap obj has all data
      * @return true if neighbour copies found else false
      */
 
-    public static boolean checkDuplicateNeighbours(GameMap p_GameMap) {
+    public static boolean checkDuplicateNeighbours(GameMatrix p_GameMap) {
         for (Continent l_Continent : p_GameMap.getContinents().values()) {
             for (Country l_Country : l_Continent.getCountries()) {
                 Set<Country> l_Neighbours = l_Country.getNeighbors();
@@ -135,13 +149,14 @@ public class MapValidation {
 
     /**
      * Method to check Map validitiy
+     *
      * @param p_GameMap GameMap obj has all data
-     * @param p_Size Minimum country required to play
+     * @param p_Size    Minimum country required to play
      * @return true if conditions are met else false
      */
 
 
-    public static boolean validateMap(GameMap p_GameMap, int p_Size) {
+    public static boolean validateMap(GameMatrix p_GameMap, int p_Size) {
         if (checkIfMapIsInvalid(p_GameMap, p_Size)) {
             return false;
         }
@@ -155,12 +170,13 @@ public class MapValidation {
 
     /**
      * Method to check Map invalid
+     *
      * @param p_GameMap GameMap obj has all data
-     * @param p_Size Minimum country requirements to play
+     * @param p_Size    Minimum country requirements to play
      * @return true if conditions are met else false
      */
 
-    private static boolean checkIfMapIsInvalid(GameMap p_GameMap, int p_Size) {
+    private static boolean checkIfMapIsInvalid(GameMatrix p_GameMap, int p_Size) {
         return checkEmptyContinents(p_GameMap) ||
                 checkDuplicateContinents(p_GameMap) ||
                 checkDuplicateCountries(p_GameMap) ||
@@ -170,7 +186,7 @@ public class MapValidation {
     }
 
     /**
-     * Check connectivity of graph 
+     * Check connectivity of graph
      */
 
     static class ConnectedGraph {
@@ -187,6 +203,7 @@ public class MapValidation {
 
         /**
          * Method to add directions b/w nodes
+         *
          * @param p_Egde1 first vertex
          * @param p_Edge2 second vertex
          */
@@ -198,7 +215,8 @@ public class MapValidation {
 
         /**
          * Method for DFS Traversal
-         * @param p_Node Starting node for DFS Traversal 
+         *
+         * @param p_Node    Starting node for DFS Traversal
          * @param p_Visited Boolean value array for node visied check
          */
 
@@ -221,6 +239,7 @@ public class MapValidation {
 
         /**
          * Method to get graph Transpose
+         *
          * @return graph revered
          */
 
@@ -239,6 +258,7 @@ public class MapValidation {
 
         /**
          * Method to check graph connection strength
+         *
          * @return true if connected else false
          */
 
@@ -278,12 +298,13 @@ public class MapValidation {
 
     /**
      * Method to see the continent is connected through graph
-     * @param p_GameMap GameMap obj has all data
+     *
+     * @param gameMap GameMap obj has all data
      * @return true if connected else false
      */
 
 
-    public static boolean checkIfContinentIsConnected(GameMap gameMap) {
+    public static boolean checkIfContinentIsConnected(GameMatrix gameMap) {
         Set<String> countryNames = gameMap.getCountries().keySet();
 
         List<String> listOfCountries = new ArrayList<>();
@@ -314,12 +335,13 @@ public class MapValidation {
 
     /**
      * Method to see if the Whole Map is connected graph
-     * @param p_GameMap GameMap obj has all data
+     *
+     * @param gameMap GameMap obj has all data
      * @return true for connected else false
      */
 
 
-    public static boolean checkIfMapIsConnected(GameMap gameMap) {
+    public static boolean checkIfMapIsConnected(GameMatrix gameMap) {
         Set<String> countryNames = gameMap.getCountries().keySet();
         List<String> listOfCountries = new ArrayList<>(countryNames.size());
 
@@ -343,11 +365,12 @@ public class MapValidation {
 
     /**
      * Method to see connectivity with graph
-     * @param p_Graph Connected class obj checks connected/not connected 
+     *
+     * @param p_Graph Connected class obj checks connected/not connected
      * @return true for connected else false
      */
 
     private static boolean checkMapConnectivity(ConnectedGraph p_Graph) {
         return p_Graph.checkIfGraphIsStronglyConnected();
-    }
+    }
 }

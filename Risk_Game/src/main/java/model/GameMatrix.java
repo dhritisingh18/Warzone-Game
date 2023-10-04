@@ -2,15 +2,19 @@ package model;
 
 import utils.MapValidation;
 import utils.SaveMap;
-import utils.ValidationException;
-import java.util.*;
-import java.util.stream.Collectors;
+import utils.ValidationFailure;
 
-import model.order.Country;
-import model.order.Player;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Class with all the game matrix properties
+ *
  * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
  * @author Rabia Tahir
@@ -36,8 +40,9 @@ public class GameMatrix {
     private GameMatrix() {
     }
 
-     /**
+    /**
      * Method gets Game matrix class instance
+     *
      * @return the class obj
      */
 
@@ -51,7 +56,8 @@ public class GameMatrix {
 
     /**
      * Method to get list of all continents
-     * @return d_Continents is continents list 
+     *
+     * @return d_Continents is continents list
      */
 
 
@@ -61,7 +67,8 @@ public class GameMatrix {
 
     /**
      * Gets one continent
-     * @param p_Id  Continent specific id
+     *
+     * @param p_Id Continent specific id
      * @return Continent obj required
      */
 
@@ -71,9 +78,9 @@ public class GameMatrix {
 
     /**
      * Get List of country
-     * @return d_Countries 
+     *
+     * @return d_Countries
      */
-
 
 
     public HashMap<String, Country> getCountries() {
@@ -82,21 +89,21 @@ public class GameMatrix {
 
     /**
      * Get one country
+     *
      * @param p_Id Country id name
      * @return country obj
      */
-
 
 
     public Country getCountry(String p_Id) {
         return d_Countries.get(p_Id);
     }
 
-     /**
-     * Get players list 
+    /**
+     * Get players list
+     *
      * @return d_Players players list
      */
-
 
 
     public HashMap<String, Player> getPlayers() {
@@ -105,6 +112,7 @@ public class GameMatrix {
 
     /**
      * Get a single player
+     *
      * @param p_Id id Player name
      * @return Player obj
      */
@@ -114,9 +122,10 @@ public class GameMatrix {
         return d_Players.get(p_Id);
     }
 
-     /**
+    /**
      * Method to get error msg
-     * @return d_ErrorMessage 
+     *
+     * @return d_ErrorMessage
      */
 
 
@@ -126,6 +135,7 @@ public class GameMatrix {
 
     /**
      * Method for error msg
+     *
      * @param p_ErrorMessage - error msg
      */
 
@@ -134,8 +144,9 @@ public class GameMatrix {
         this.d_ErrorMessage = p_ErrorMessage;
     }
 
-     /**
+    /**
      * reutrn name of map
+     *
      * @return name of map
      */
 
@@ -146,6 +157,7 @@ public class GameMatrix {
 
     /**
      * To set name of map
+     *
      * @param p_Name name of map
      */
 
@@ -168,16 +180,17 @@ public class GameMatrix {
 
     /**
      * Amend continent to continets list
+     *
      * @param p_ContinentName name of continent
      * @param p_ControlValue  control val of continent
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-    public void addContinent(String p_ContinentName, String p_ControlValue) throws ValidationException {
+    public void addContinent(String p_ContinentName, String p_ControlValue) throws ValidationFailure {
 
         if (this.getContinents().containsKey(p_ContinentName)) {
-            throw new ValidationException("There is a Continent that matches with the Continent Entered");
+            throw new ValidationFailure("There is a Continent that matches with the Continent Entered");
         }
         Continent l_Continent = new Continent();
         l_Continent.setName(p_ContinentName);
@@ -192,14 +205,14 @@ public class GameMatrix {
      *
      * @param p_CountryName   Country name
      * @param p_ContinentName Continent name
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-    public void addCountry(String p_CountryName, String p_ContinentName) throws ValidationException {
+    public void addCountry(String p_CountryName, String p_ContinentName) throws ValidationFailure {
 
         if (this.getCountries().containsKey(p_CountryName)) {
-            throw new ValidationException("Action invalid. This country exists already");
+            throw new ValidationFailure("Action invalid. This country exists already");
         }
         Country l_Country = new Country();
         l_Country.setName(p_CountryName);
@@ -211,15 +224,16 @@ public class GameMatrix {
 
     /**
      * Continent removed from all lists
+     *
      * @param p_ContinentName Name of country
-     * @throws ValidationException incase of I/O problem
+     * @throws utils.ValidationFailure incase of I/O problem
      */
 
 
-    public void removeContinent(String p_ContinentName) throws ValidationException {
+    public void removeContinent(String p_ContinentName) throws ValidationFailure {
 
         if (!this.getContinents().containsKey(p_ContinentName)) {
-            throw new ValidationException("Continent not found");
+            throw new ValidationFailure("Continent not found");
         }
         Set<String> l_CountrySet = this.getContinents().remove(p_ContinentName)
                 .getCountries()
@@ -232,16 +246,17 @@ public class GameMatrix {
     }
 
     /**
-     * Country removed from all lists 
+     * Country removed from all lists
+     *
      * @param p_CountryName Name of country
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-    public void removeCountry(String p_CountryName) throws ValidationException {
+    public void removeCountry(String p_CountryName) throws ValidationFailure {
         Country l_Country = this.getCountry(p_CountryName);
         if (Objects.isNull(l_Country)) {
-            throw new ValidationException("This country is not found: " + p_CountryName);
+            throw new ValidationFailure("This country is not found: " + p_CountryName);
         }
         this.getContinent(l_Country.getContinent()).getCountries().remove(l_Country);
         this.getCountries().remove(l_Country.getName());
@@ -253,36 +268,36 @@ public class GameMatrix {
      *
      * @param p_CountryName         Name of country
      * @param p_NeighborCountryName Name of neighbouring country
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-    public void addNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationException {
+    public void addNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationFailure {
         Country l_Country1 = this.getCountry(p_CountryName);
         Country l_Country2 = this.getCountry(p_NeighborCountryName);
         if (Objects.isNull(l_Country1) || Objects.isNull(l_Country2)) {
-            throw new ValidationException(" One of the mentioned Countries does not exist");
+            throw new ValidationFailure(" One of the mentioned Countries does not exist");
         }
         l_Country1.getNeighbors().add(l_Country2);
         System.out.printf("Successfully connected routes between mentioned Countries: %s - %s\n", p_CountryName, p_NeighborCountryName);
     }
 
     /**
-     * for neighbour removal 
-     * @param p_CountryName     name of country
+     * for neighbour removal
+     *
+     * @param p_CountryName         name of country
      * @param p_NeighborCountryName name of neighbouring country
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-
-    public void removeNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationException {
+    public void removeNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationFailure {
         Country l_Country1 = this.getCountry(p_CountryName);
         Country l_Country2 = this.getCountry(p_NeighborCountryName);
         if (Objects.isNull(l_Country1)) {
-            throw new ValidationException("Either one or both countries do not exist");
+            throw new ValidationFailure("Either one or both countries do not exist");
         } else if (!l_Country1.getNeighbors().contains(l_Country2) || !l_Country2.getNeighbors().contains(l_Country1)) {
-            throw new ValidationException("These are not neighbouring countries ");
+            throw new ValidationFailure("These are not neighbouring countries ");
         } else {
             this.getCountry(p_CountryName).getNeighbors().remove(l_Country2);
             System.out.printf("Route removal successful: %s - %s\n", p_CountryName, p_NeighborCountryName);
@@ -292,14 +307,15 @@ public class GameMatrix {
 
     /**
      * For addition of player
+     *
      * @param p_PlayerName Name of player
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
 
-    public void addPlayer(String p_PlayerName) throws ValidationException {
+    public void addPlayer(String p_PlayerName) throws ValidationFailure {
         if (this.getPlayers().containsKey(p_PlayerName)) {
-            throw new ValidationException("This player exists already");
+            throw new ValidationFailure("This player exists already");
         }
         Player l_Player = new Player();
         l_Player.setName(p_PlayerName);
@@ -309,14 +325,15 @@ public class GameMatrix {
 
     /**
      * For player removal
+     *
      * @param p_PlayerName name of player
-     * @throws ValidationException incase of I/O problem
+     * @throws ValidationFailure incase of I/O problem
      */
 
-    public void removePlayer(String p_PlayerName) throws ValidationException {
+    public void removePlayer(String p_PlayerName) throws ValidationFailure {
         Player l_Player = this.getPlayer(p_PlayerName);
-        if (Objects.isNull(l_Player) || l_Player==null) {
-            throw new ValidationException("Player Not found " + p_PlayerName);
+        if (Objects.isNull(l_Player) || l_Player == null) {
+            throw new ValidationFailure("Player Not found " + p_PlayerName);
         }
         this.getPlayers().remove(l_Player.getName());
         System.out.println("Player deletion successful: " + p_PlayerName);
@@ -324,11 +341,12 @@ public class GameMatrix {
 
     /**
      * if valid, map saved as file
-     * @throws ValidationException incase I/O problem.
+     *
+     * @throws ValidationFailure incase I/O problem.
      */
 
 
-    public void saveMap() throws ValidationException {
+    public void saveMap() throws ValidationFailure {
 
         //Depending on player demand p_size for min no of countries 
         if (MapValidation.validateMap(d_GameMap, 0)) {
@@ -339,17 +357,17 @@ public class GameMatrix {
                     if (d_SaveMap.saveMapIntoFile(d_GameMap, d_GameMap.getName())) {
                         System.out.println("Map validated and saved");
                     } else {
-                        throw new ValidationException("Load a new name as Map with this name exists already");
+                        throw new ValidationFailure("Load a new name as Map with this name exists already");
                     }
                     bool = false;
                 } else {
 
-                    throw new ValidationException("Enter: file name");
+                    throw new ValidationFailure("Enter: file name");
 
                 }
             }
         } else {
-            throw new ValidationException("Cannot save. Invalid map.");
+            throw new ValidationFailure("Cannot save. Invalid map.");
         }
     }
 
@@ -365,7 +383,7 @@ public class GameMatrix {
         List<Country> d_countryList = d_GameMap.getCountries().values().stream().collect(Collectors.toList());
         ShuffleClass.knuthShuffle(d_countryList);
 
-        int d_country=0;
+        int d_country = 0;
         while (d_country < d_countryList.size()) {
             Country d_c = d_countryList.get(d_country);           // to get all countries of map
             Player d_p = d_players.get(d_player_index);          // use order of player to find relevant player
@@ -405,7 +423,7 @@ public class GameMatrix {
             Map.Entry<String, Continent> continentMap = (Map.Entry<String, Continent>) d_iteratorForContinents.next();
             String d_continentId = (String) continentMap.getKey();
             // Use ID to get continent
-            Continent d_continent = d_GameMap.getContinents().get(d_continentId); 
+            Continent d_continent = d_GameMap.getContinents().get(d_continentId);
 
             System.out.format(table, d_continent.getName());
         }
@@ -432,7 +450,7 @@ public class GameMatrix {
             Map.Entry<String, Continent> d_continentMap = (Map.Entry<String, Continent>) d_iteratorForContinent.next();
             String d_continentId = (String) d_continentMap.getKey();
             // Use ID to get continent
-            Continent d_continent = d_GameMap.getContinents().get(d_continentId); 
+            Continent d_continent = d_GameMap.getContinents().get(d_continentId);
             Iterator<Country> d_listIterator = d_continent.getCountries().iterator();
 
             while (d_listIterator.hasNext()) {
@@ -450,7 +468,7 @@ public class GameMatrix {
         HashMap<String, Player> d_players = d_GameMap.getPlayers();
         System.out.println("\n\n\n\nGame players at the start of game : ");
         if (d_players != null) {
-            d_players.forEach((key, value) -> System.out.println((String) key));  
+            d_players.forEach((key, value) -> System.out.println((String) key));
             System.out.println();
         }
 
@@ -458,7 +476,7 @@ public class GameMatrix {
         //Shows players property 
 
         System.out.println("\nOwnership of players: \n");
-        
+
 
         System.out.format(
                 "+---------------+-----------------------+----------------------------+%n");
@@ -482,7 +500,7 @@ public class GameMatrix {
         System.out.format(
                 "+---------------+-----------------------+----------------------------+%n");
 
-    }
+    }
 
 
 }

@@ -6,11 +6,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
  * This class is used to save map as a text file
+ *
  * @author Dhriti Singh
  */
 public class MapReader {
@@ -19,11 +24,11 @@ public class MapReader {
      * A function to read the map.
      *
      * @param p_GameMatrix The GameMatrix object which contains all the data
-     * @param p_FileName The data in file
+     * @param p_FileName   The data in file
      */
-    public static void readMap(GameMatrix p_GameMatrix, String p_FileName) throws ValidationException {
+    public static void readMap(GameMatrix p_GameMatrix, String p_FileName) throws ValidationFailure {
         try {
-            p_GameMatrix.clearGameMatrix();
+            p_GameMatrix.clearGameMap();
             File l_File = new File("maps/" + p_FileName);
             FileReader l_FileReader = new FileReader(l_File);
             Map<String, List<String>> l_MapFileContents = new HashMap<>();
@@ -98,25 +103,25 @@ public class MapReader {
             }
             Map<String, List<String>> l_CountryNeighbors = readCountriesFromFile(p_GameMatrix, l_MapFileContents.get("Territories"));
             addNeighborsFromFile(p_GameMatrix, l_CountryNeighbors);
-        } catch (ValidationException | IOException e) {
-            throw new ValidationException(e.getMessage());
+        } catch (ValidationFailure | IOException e) {
+            throw new ValidationFailure(e.getMessage());
         }
     }
 
     /**
      * A function to read the continents from file.
      *
-     * @param p_GameMatrix The GameMatrix object which contains all the data
+     * @param p_GameMatrix     The GameMatrix object which contains all the data
      * @param p_ContinentArray The array of strings containing continents
      */
-    public static void readContinentsFromFile(GameMatrix p_GameMatrix, List<String> p_ContinentArray) throws ValidationException {
+    public static void readContinentsFromFile(GameMatrix p_GameMatrix, List<String> p_ContinentArray) throws ValidationFailure {
         p_ContinentArray.stream()
                 .map(l_InputString -> l_InputString.split(" "))
                 .filter(l_InputArray -> l_InputArray.length == 2)
                 .forEach(l_InputArray -> {
                     try {
                         p_GameMatrix.addContinent(l_InputArray[0], l_InputArray[1]);
-                    } catch (ValidationException e) {
+                    } catch (ValidationFailure e) {
                         e.printStackTrace();
                     }
 
@@ -126,10 +131,10 @@ public class MapReader {
     /**
      * A function to read the countries from file.
      *
-     * @param p_GameMatrix The GameMatrix object which contains all the data
-     * @param p_ContinentArray The array of strings containing countries
+     * @param p_GameMatrix   The GameMatrix object which contains all the data
+     * @param p_CountryArray The array of strings containing countries
      */
-    public static Map<String, List<String>> readCountriesFromFile(GameMatrix p_GameMatrix, List<String> p_CountryArray) throws ValidationException {
+    public static Map<String, List<String>> readCountriesFromFile(GameMatrix p_GameMatrix, List<String> p_CountryArray) throws ValidationFailure {
         Map<String, List<String>> l_CountryNeighbors = new HashMap<>();
         return p_CountryArray.stream()
                 .map(l_InputString -> Arrays.asList(l_InputString.split(" ")))
@@ -140,7 +145,7 @@ public class MapReader {
 
                     try {
                         p_GameMatrix.addCountry(countryName, continentName);
-                    } catch (ValidationException e) {
+                    } catch (ValidationFailure e) {
                         e.printStackTrace();
                     }
 
@@ -157,9 +162,8 @@ public class MapReader {
      * A function to add neighbours.
      *
      * @param p_GameMatrix The GameMatrix object which contains all the data
-     * @param p_ContinentArray The list of strings containing neighbors of the country
      */
-    public static void addNeighborsFromFile(GameMatrix p_GameMatrix, Map<String, List<String>> p_NeighborList) throws ValidationException {
+    public static void addNeighborsFromFile(GameMatrix p_GameMatrix, Map<String, List<String>> p_NeighborList) throws ValidationFailure {
 
         for (String l_Country : p_NeighborList.keySet()) {
             for (String l_Neighbor : p_NeighborList.get(l_Country)) {

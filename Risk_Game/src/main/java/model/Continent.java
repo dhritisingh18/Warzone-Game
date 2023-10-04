@@ -1,8 +1,11 @@
+package model;
+
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Class to set and get Continent and it's properties
+ *
  * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
  * @author Rabia Tahir
@@ -20,6 +23,7 @@ public class Continent {
 
     /**
      * Method to get the continent id.
+     *
      * @return d_Id, the continent id.
      */
     public String getId() {
@@ -28,6 +32,7 @@ public class Continent {
 
     /**
      * Method to set the continent identifier.
+     *
      * @param p_Id, the continent id.
      */
     public void setId(String p_Id) {
@@ -36,6 +41,7 @@ public class Continent {
 
     /**
      * Method to get the name of the continent
+     *
      * @return d_Name, the continent's name.
      */
     public String getName() {
@@ -44,6 +50,7 @@ public class Continent {
 
     /**
      * Method to set the name of the continent
+     *
      * @param p_name, name of the continent
      */
     public void setName(String p_name) {
@@ -52,6 +59,7 @@ public class Continent {
 
     /**
      * Method to get the Armies Awarded
+     *
      * @return d_AwardArmies, the Armies Awarded to the continent
      */
     public int getAwardArmies() {
@@ -60,6 +68,7 @@ public class Continent {
 
     /**
      * Method to set the Armies Awarded to the continent
+     *
      * @param p_AwardArmies, Armies Awarded
      */
     public void setAwardArmies(int p_AwardArmies) {
@@ -68,6 +77,7 @@ public class Continent {
 
     /**
      * Function to check if armies are credited
+     *
      * @return true if the armies are credited;
      */
     public boolean isCredited() {
@@ -76,6 +86,7 @@ public class Continent {
 
     /**
      * Method to count the number of armies credited
+     *
      * @param p_Credited Armies Credited
      */
     public void setCredited(boolean p_Credited) {
@@ -84,6 +95,7 @@ public class Continent {
 
     /**
      * Method that returns countries in the continent.
+     *
      * @return set of countries
      */
     public Set<Country> getCountries() {
@@ -91,5 +103,5 @@ public class Continent {
             d_Countries = new HashSet<>();
         }
         return d_Countries;
-    }
+    }
 }

@@ -1,11 +1,10 @@
 package utils;
 
+import model.Country;
+import model.GameMatrix;
+
 import java.io.PrintWriter;
 import java.util.Set;
-
-import model.Continent;
-import model.Country;
-import model.GameMap;
 
 /**
  * This class is used to save map as a text file
@@ -14,7 +13,7 @@ import model.GameMap;
  */
 public class SaveMap {
 
-    private GameMap gameMap;
+    private GameMatrix gameMap;
 
     public String createANeighborList(Set<Country> p_Neighbors) {
 
@@ -29,7 +28,7 @@ public class SaveMap {
         return "";
     }
 
-    public boolean saveMapIntoFile(GameMap p_GameMap, String name) {
+    public boolean saveMapIntoFile(GameMatrix p_GameMap, String name) {
         try (PrintWriter writeData = new PrintWriter("maps/" + name + ".map")) {
             StringBuilder mapDataBuilder = new StringBuilder();
 
