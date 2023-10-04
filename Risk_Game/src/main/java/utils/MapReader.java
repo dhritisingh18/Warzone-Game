@@ -1,6 +1,6 @@
 package utils;
 
-import model.GameMatrix;
+import model.GameMap;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class MapReader {
 
-    public static void readMap(GameMatrix p_GameMap, String p_FileName) throws ValidationException {
+    public static void readMap(GameMap p_GameMap, String p_FileName) throws ValidationException {
         try {
             p_GameMap.clearGameMap();
             File l_File = new File("maps/" + p_FileName);
@@ -88,7 +88,7 @@ public class MapReader {
     }
 
 
-    public static void readContinentsFromFile(GameMatrix p_GameMap, List<String> p_ContinentArray) throws ValidationException {
+    public static void readContinentsFromFile(GameMap p_GameMap, List<String> p_ContinentArray) throws ValidationException {
         for (String l_InputString : p_ContinentArray) {
             String[] l_InputArray = l_InputString.split(" ");
             if (l_InputArray.length == 2) {
@@ -98,7 +98,7 @@ public class MapReader {
     }
 
 
-    public static Map<String, List<String>> readCountriesFromFile(GameMatrix p_GameMap, List<String> p_CountryArray) throws ValidationException {
+    public static Map<String, List<String>> readCountriesFromFile(GameMap p_GameMap, List<String> p_CountryArray) throws ValidationException {
         Map<String, List<String>> l_CountryNeighbors = new HashMap<>();
         for (String l_InputString : p_CountryArray) {
             List<String> l_InputArray = Arrays.stream(l_InputString.split(" ")).collect(Collectors.toList());
@@ -110,7 +110,7 @@ public class MapReader {
         return l_CountryNeighbors;
     }
 
-    public static void addNeighborsFromFile(GameMatrix p_GameMap, Map<String, List<String>> p_NeighborList) throws ValidationException {
+    public static void addNeighborsFromFile(GameMap p_GameMap, Map<String, List<String>> p_NeighborList) throws ValidationException {
         for (String l_Country : p_NeighborList.keySet()) {
             for (String l_Neighbor : p_NeighborList.get(l_Country)) {
                 p_GameMap.addNeighbor(l_Country, l_Neighbor);
