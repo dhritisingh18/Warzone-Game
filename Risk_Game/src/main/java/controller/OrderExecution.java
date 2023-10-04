@@ -29,11 +29,13 @@ public class OrderExecution implements GameHandler {
     public OrderExecutionPhase(){
     	d_GameGrid = GameMatrix.getInstance();
     }
+  
     /**
-     * Method to start the game cycle
-     * @param p_GameCycle the current game cycle
-     * @return d_NextGameCycle will give next game cycle
-     * @throws Exception if failed execution
+     * This method starts the current game phase
+     *
+     * @param p_GamePhase the current game phase
+     * @return d_NextGameCycle gives the next game phase
+     * @throws Exception when execution fails
      */
     @Override
     public GameCycle begin(GameCycle p_GameCycle) throws Exception {
@@ -43,8 +45,8 @@ public class OrderExecution implements GameHandler {
     }
 
     /**
-     *Method to execute order in list
-     * @return true on successful order execution
+     * This method executes each order in the order list
+     * @return true if execution is successful
      */
     private boolean PerformOrders()
     {
