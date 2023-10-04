@@ -6,6 +6,20 @@ import utils.ValidationException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import model.order.Country;
+import model.order.Player;
+
+/**
+ * Class with all the game matrix properties
+ * @author Mohammad Ehtesham Arif
+ * @author Dhriti Singh
+ * @author Rabia Tahir
+ * @author Simran Simran
+ * @author Ritik Gulati
+ * @author Ritika Dhamija
+ * @version 1.0.0
+ */
+
 
 public class GameMatrix {
     private static GameMatrix d_GameMap;
@@ -15,9 +29,17 @@ public class GameMatrix {
     private String d_Name;
     private String d_ErrorMessage;
 
+    /**
+     * Default Constructor
+     */
 
     private GameMatrix() {
     }
+
+     /**
+     * Method gets Game matrix class instance
+     * @return the class obj
+     */
 
 
     public static GameMatrix getInstance() {
@@ -27,15 +49,30 @@ public class GameMatrix {
         return d_GameMap;
     }
 
+    /**
+     * Method to get list of all continents
+     * @return d_Continents is continents list 
+     */
+
 
     public HashMap<String, Continent> getContinents() {
         return d_Continents;
     }
 
+    /**
+     * Gets one continent
+     * @param p_Id  Continent specific id
+     * @return Continent obj required
+     */
 
     public Continent getContinent(String p_Id) {
         return d_Continents.get(p_Id);
     }
+
+    /**
+     * Get List of country
+     * @return d_Countries 
+     */
 
 
 
@@ -43,11 +80,22 @@ public class GameMatrix {
         return d_Countries;
     }
 
+    /**
+     * Get one country
+     * @param p_Id Country id name
+     * @return country obj
+     */
+
 
 
     public Country getCountry(String p_Id) {
         return d_Countries.get(p_Id);
     }
+
+     /**
+     * Get players list 
+     * @return d_Players players list
+     */
 
 
 
@@ -55,25 +103,51 @@ public class GameMatrix {
         return d_Players;
     }
 
+    /**
+     * Get a single player
+     * @param p_Id id Player name
+     * @return Player obj
+     */
+
 
     public Player getPlayer(String p_Id) {
         return d_Players.get(p_Id);
     }
+
+     /**
+     * Method to get error msg
+     * @return d_ErrorMessage 
+     */
 
 
     public String getErrorMessage() {
         return d_ErrorMessage;
     }
 
+    /**
+     * Method for error msg
+     * @param p_ErrorMessage - error msg
+     */
+
 
     public void setErrorMessage(String p_ErrorMessage) {
         this.d_ErrorMessage = p_ErrorMessage;
     }
 
+     /**
+     * reutrn name of map
+     * @return name of map
+     */
+
 
     public String getName() {
         return d_Name;
     }
+
+    /**
+     * To set name of map
+     * @param p_Name name of map
+     */
 
 
     public void setName(String p_Name) {
@@ -81,11 +155,23 @@ public class GameMatrix {
     }
 
 
+    /**
+     * Method that sets Gamematrix obj to empty at the end of every phase
+     */
+
+
     public void clearGameMap() {
         GameMatrix.getInstance().getContinents().clear();
         GameMatrix.getInstance().getCountries().clear();
         GameMatrix.getInstance().getPlayers().clear();
     }
+
+    /**
+     * Amend continent to continets list
+     * @param p_ContinentName name of continent
+     * @param p_ControlValue  control val of continent
+     * @throws ValidationException incase of I/O problem
+     */
 
 
     public void addContinent(String p_ContinentName, String p_ControlValue) throws ValidationException {
@@ -100,25 +186,40 @@ public class GameMatrix {
         System.out.println("Continent Successfully added: " + p_ContinentName);
     }
 
+    /**
+     * Adds country to the map's country list and continent's
+     * country list.
+     *
+     * @param p_CountryName   Country name
+     * @param p_ContinentName Continent name
+     * @throws ValidationException incase of I/O problem
+     */
+
 
     public void addCountry(String p_CountryName, String p_ContinentName) throws ValidationException {
 
         if (this.getCountries().containsKey(p_CountryName)) {
-            throw new ValidationException("Oops! This Country exists already");
+            throw new ValidationException("Action invalid. This country exists already");
         }
         Country l_Country = new Country();
         l_Country.setName(p_CountryName);
         l_Country.setContinent(p_ContinentName);
         this.getCountries().put(p_CountryName, l_Country);
         this.getContinent(p_ContinentName).getCountries().add(l_Country);
-        System.out.println("Country Successfully added: " + p_CountryName);
+        System.out.println("Addition of country successful " + p_CountryName);
     }
+
+    /**
+     * Continent removed from all lists
+     * @param p_ContinentName Name of country
+     * @throws ValidationException incase of I/O problem
+     */
 
 
     public void removeContinent(String p_ContinentName) throws ValidationException {
 
         if (!this.getContinents().containsKey(p_ContinentName)) {
-            throw new ValidationException("There is no such continent");
+            throw new ValidationException("Continent not found");
         }
         Set<String> l_CountrySet = this.getContinents().remove(p_ContinentName)
                 .getCountries()
@@ -127,19 +228,33 @@ public class GameMatrix {
         for (String l_CountryName : l_CountrySet) {
             this.getCountries().remove(l_CountryName);
         }
-        System.out.println("Kudos! The Continent deleted is: " + p_ContinentName);
+        System.out.println("Continent is deleted " + p_ContinentName);
     }
+
+    /**
+     * Country removed from all lists 
+     * @param p_CountryName Name of country
+     * @throws ValidationException incase of I/O problem
+     */
 
 
     public void removeCountry(String p_CountryName) throws ValidationException {
         Country l_Country = this.getCountry(p_CountryName);
         if (Objects.isNull(l_Country)) {
-            throw new ValidationException("No such Country exists: " + p_CountryName);
+            throw new ValidationException("This country is not found: " + p_CountryName);
         }
         this.getContinent(l_Country.getContinent()).getCountries().remove(l_Country);
         this.getCountries().remove(l_Country.getName());
-        System.out.println("Country successfully deleted");
+        System.out.println("Deleted country!");
     }
+
+    /**
+     * Adds the neighbor to particular country
+     *
+     * @param p_CountryName         Name of country
+     * @param p_NeighborCountryName Name of neighbouring country
+     * @throws ValidationException incase of I/O problem
+     */
 
 
     public void addNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationException {
@@ -152,69 +267,96 @@ public class GameMatrix {
         System.out.printf("Successfully connected routes between mentioned Countries: %s - %s\n", p_CountryName, p_NeighborCountryName);
     }
 
+    /**
+     * for neighbour removal 
+     * @param p_CountryName     name of country
+     * @param p_NeighborCountryName name of neighbouring country
+     * @throws ValidationException incase of I/O problem
+     */
+
 
 
     public void removeNeighbor(String p_CountryName, String p_NeighborCountryName) throws ValidationException {
         Country l_Country1 = this.getCountry(p_CountryName);
         Country l_Country2 = this.getCountry(p_NeighborCountryName);
         if (Objects.isNull(l_Country1)) {
-            throw new ValidationException("Atleast one of the mentioned Countries does not exist");
+            throw new ValidationException("Either one or both countries do not exist");
         } else if (!l_Country1.getNeighbors().contains(l_Country2) || !l_Country2.getNeighbors().contains(l_Country1)) {
-            throw new ValidationException("Mentioned Countries are not neighbors");
+            throw new ValidationException("These are not neighbouring countries ");
         } else {
             this.getCountry(p_CountryName).getNeighbors().remove(l_Country2);
-            System.out.printf("Successfully removed routes between mentioned Countries: %s - %s\n", p_CountryName, p_NeighborCountryName);
+            System.out.printf("Route removal successful: %s - %s\n", p_CountryName, p_NeighborCountryName);
         }
     }
+
+
+    /**
+     * For addition of player
+     * @param p_PlayerName Name of player
+     * @throws ValidationException incase of I/O problem
+     */
 
 
     public void addPlayer(String p_PlayerName) throws ValidationException {
         if (this.getPlayers().containsKey(p_PlayerName)) {
-            throw new ValidationException("Player already exists");
+            throw new ValidationException("This player exists already");
         }
         Player l_Player = new Player();
         l_Player.setName(p_PlayerName);
         this.getPlayers().put(p_PlayerName, l_Player);
-        System.out.println("Successfully added Player: " + p_PlayerName);
+        System.out.println("Added player succesfully " + p_PlayerName);
     }
+
+    /**
+     * For player removal
+     * @param p_PlayerName name of player
+     * @throws ValidationException incase of I/O problem
+     */
 
     public void removePlayer(String p_PlayerName) throws ValidationException {
         Player l_Player = this.getPlayer(p_PlayerName);
         if (Objects.isNull(l_Player) || l_Player==null) {
-            throw new ValidationException("No such Player exists: " + p_PlayerName);
+            throw new ValidationException("Player Not found " + p_PlayerName);
         }
         this.getPlayers().remove(l_Player.getName());
-        System.out.println("Successfully deleted the player: " + p_PlayerName);
+        System.out.println("Player deletion successful: " + p_PlayerName);
     }
+
+    /**
+     * if valid, map saved as file
+     * @throws ValidationException incase I/O problem.
+     */
 
 
     public void saveMap() throws ValidationException {
-        //Ask p_size for minimum number of countries based on player
+
+        //Depending on player demand p_size for min no of countries 
         if (MapValidation.validateMap(d_GameMap, 0)) {
             SaveMap d_SaveMap = new SaveMap();
             boolean bool = true;
             while (bool) {
                 if (!Objects.isNull(d_GameMap.getName()) && !d_GameMap.getName().isEmpty()) {
                     if (d_SaveMap.saveMapIntoFile(d_GameMap, d_GameMap.getName())) {
-                        System.out.println("The map has been validated and saved.");
+                        System.out.println("Map validated and saved");
                     } else {
-                        throw new ValidationException("This Map name already exists, enter a different name.");
+                        throw new ValidationException("Load a new name as Map with this name exists already");
                     }
                     bool = false;
                 } else {
 
-                    throw new ValidationException("Kindly enter the file name:");
+                    throw new ValidationException("Enter: file name");
 
                 }
             }
         } else {
-            throw new ValidationException("Invalid Map therefore can not be saved.");
+            throw new ValidationException("Cannot save. Invalid map.");
         }
     }
 
     /**
-     * Assign countries to each player of the game in random.
+     * Randomly assign countries to players
      */
+
     public void assignCountries() {
         int d_player_index = 0;
         List<Player> d_players = d_GameMap.getPlayers().values().stream().collect(Collectors.toList());
@@ -225,14 +367,14 @@ public class GameMatrix {
 
         int d_country=0;
         while (d_country < d_countryList.size()) {
-            Country d_c = d_countryList.get(d_country);                // loop for get each country of the map
-            Player d_p = d_players.get(d_player_index);          // finding the corresponding player with the help of the order of the player
+            Country d_c = d_countryList.get(d_country);           // to get all countries of map
+            Player d_p = d_players.get(d_player_index);          // use order of player to find relevant player
             d_p.getCapturedCountries().add(d_c);
             d_c.setPlayer(d_p);
             System.out.println(d_c.getName() + "has been assigned to " + d_p.getName());
-            if (d_player_index < d_GameMap.getPlayers().size() - 1) {     //if not all players get a new country in this round
+            if (d_player_index < d_GameMap.getPlayers().size() - 1) {     //players get new country
                 d_player_index++;
-            } else {                                         //if all players get a new counter in this round, start from player 1
+            } else {                                              //New counter given to players, start with player 1
                 d_player_index = 0;
             }
             d_country++;
@@ -242,36 +384,37 @@ public class GameMatrix {
 
 
     /**
-     * A function to display the map chosen, its continents, countries, neighbours,
-     * players and their ownership
+     * Method to show picked map along with its continents/countries/neighbours/players
      */
 
     public void showMap() {
-        System.out.println("\nMap Details Shown : \n");
+        System.out.println("\nDetails of map : \n");
 
         // Showing Continents in Map
-        System.out.println("\nThe Continents present in this Map are : \n");
+        System.out.println("\nMaps Continents: \n");
         Iterator<Map.Entry<String, Continent>> d_iteratorForContinents = d_GameMap.getContinents().entrySet()
                 .iterator();
 
         String table = "|%-18s|%n";
 
         System.out.format("+------------------+%n");
-        System.out.format("| Continent's name |%n");
+        System.out.format("| Name of Continent |%n");
         System.out.format("+------------------+%n");
 
         while (d_iteratorForContinents.hasNext()) {
             Map.Entry<String, Continent> continentMap = (Map.Entry<String, Continent>) d_iteratorForContinents.next();
             String d_continentId = (String) continentMap.getKey();
-            Continent d_continent = d_GameMap.getContinents().get(d_continentId); //Get the particular continent by its ID(Name)
+            // Use ID to get continent
+            Continent d_continent = d_GameMap.getContinents().get(d_continentId); 
 
             System.out.format(table, d_continent.getName());
         }
         System.out.format("+------------------+%n");
 
 
-        // Showing Countries in the Continent and their details
-        System.out.println("\nThe countries in this Map and their details are : \n");
+        // Details of countries in continent
+
+        System.out.println("\nCountry Details in map : \n");
 
         Iterator<Map.Entry<String, Continent>> d_iteratorForContinent = d_GameMap.getContinents().entrySet()
                 .iterator();
@@ -288,8 +431,8 @@ public class GameMatrix {
         while (d_iteratorForContinent.hasNext()) {
             Map.Entry<String, Continent> d_continentMap = (Map.Entry<String, Continent>) d_iteratorForContinent.next();
             String d_continentId = (String) d_continentMap.getKey();
-            Continent d_continent = d_GameMap.getContinents().get(d_continentId); // to get the continent by its ID(Name)
-            //ListIterator<Country> listIterator = continent.getCountries().listIterator();
+            // Use ID to get continent
+            Continent d_continent = d_GameMap.getContinents().get(d_continentId); 
             Iterator<Country> d_listIterator = d_continent.getCountries().iterator();
 
             while (d_listIterator.hasNext()) {
@@ -302,19 +445,20 @@ public class GameMatrix {
         System.out.format(
                 "+--------------+-----------------------+------------------+----------------------------+---------------+---------------+%n");
 
-        // Showing the players in game. Have to modify
+        // To be modified, players in game
 
         HashMap<String, Player> d_players = d_GameMap.getPlayers();
-        System.out.println("\n\n\n\nPlayers in this game on the start of game : ");
+        System.out.println("\n\n\n\nGame players at the start of game : ");
         if (d_players != null) {
-            d_players.forEach((key, value) -> System.out.println((String) key));  // will slightly modify the output after testing with the entire project
+            d_players.forEach((key, value) -> System.out.println((String) key));  
             System.out.println();
         }
 
 
-        //Showing the Ownership of the players
-        System.out.println("\nThe Map ownership of the players are : \n");
-        //  String table1 = "|%-15s|%-30s|%-21d|%n";
+        //Shows players property 
+
+        System.out.println("\nOwnership of players: \n");
+        
 
         System.out.format(
                 "+---------------+-----------------------+----------------------------+%n");
@@ -330,8 +474,6 @@ public class GameMatrix {
 
         for (Player d_player : d_playerss) {
 
-            //Iterator<Country> listIterator = continent.getCountries().iterator();
-
             System.out.format(table1, d_player.getName(), d_player.buildCapturedCountriesList(d_player.getCapturedCountries()), d_player.getReinforcementArmies());
 
 
@@ -340,7 +482,7 @@ public class GameMatrix {
         System.out.format(
                 "+---------------+-----------------------+----------------------------+%n");
 
-    }
+    }
 
 
 }
