@@ -43,11 +43,13 @@ public class GamePlay implements GameHandler {
             System.out.println("1. Enter 1 to view the set of commands" + "\n" + "2. Enter 2 to end");
             String l_Input = SCANNER.nextLine();
             List<String> l_InputList = null;
-            if (l_Input.contains("-")) {
-                l_InputList = Arrays.stream(l_Input.split("-")).filter(s -> !s.isEmpty()).map(String::trim).collect(Collectors.toList());
-            } else {
-                l_InputList = Arrays.stream(l_Input.split(" ")).collect(Collectors.toList());
-            }
+            l_InputList = l_Input.contains("-")
+                    ? Arrays.stream(l_Input.split("-"))
+                    .filter(s -> !s.isEmpty())
+                    .map(String::trim)
+                    .collect(Collectors.toList())
+                    : Arrays.stream(l_Input.split(" "))
+                    .collect(Collectors.toList());
 
             if (!inputValidator(l_InputList)) {
                 if (l_Input.startsWith("2")) {
