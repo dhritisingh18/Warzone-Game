@@ -1,6 +1,6 @@
 package utils;
 
-import model.GameMap;
+import model.GameMatrix;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,12 +9,21 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
+/**
+ * This class is used to save map as a text file
+ * @author Dhriti Singh
+ */
 public class MapReader {
 
-    public static void readMap(GameMap p_GameMap, String p_FileName) throws ValidationException {
+    /**
+     * A function to read the map.
+     *
+     * @param p_GameMatrix The GameMatrix object which contains all the data
+     * @param p_FileName The data in file
+     */
+    public static void readMap(GameMatrix p_GameMatrix, String p_FileName) throws ValidationException {
         try {
-            p_GameMap.clearGameMap();
+            p_GameMatrix.clearGameMatrix();
             File l_File = new File("maps/" + p_FileName);
             FileReader l_FileReader = new FileReader(l_File);
             Map<String, List<String>> l_MapFileContents = new HashMap<>();
@@ -22,99 +31,142 @@ public class MapReader {
             BufferedReader l_Buffer = new BufferedReader(l_FileReader);
             while (l_Buffer.ready()) {
                 String l_Read = l_Buffer.readLine();
-                if (!l_Read.isEmpty()) {
+                if (l_Read.isEmpty()) {
+                    System.out.println("");
+                } else {
                     if (l_Read.contains("[") && l_Read.contains("]")) {
-                        l_CurrentKey = l_Read.replace("[", "").replace("]", "");
+                        if (l_Read.equals("[continents]")) {
+                            l_CurrentKey = "Continents";
+                        } else {
+                            l_CurrentKey = l_Read.replace("[", "").replace("]", "");
+                        }
+
+
                         l_MapFileContents.put(l_CurrentKey, new ArrayList<>());
                     } else {
                         l_MapFileContents.get(l_CurrentKey).add(l_Read);
                     }
                 }
             }
-            readContinentsFromFile(p_GameMap, l_MapFileContents.get("Continents"));
-            Map<String,ArrayList<String>> countryMap=new HashMap<>();
+            readContinentsFromFile(p_GameMatrix, l_MapFileContents.get("Continents"));
+            Map<String, ArrayList<String>> countryMap = new HashMap<>();
 
-            for(String country : l_MapFileContents.get("countries")){
-                String[] countryArr=country.split(" ");
-                ArrayList<String> list=new ArrayList<>();
-                for(String s : countryArr){
+            for (String country : l_MapFileContents.get("countries")) {
+                String[] countryArr = country.split(" ");
+                ArrayList<String> list = new ArrayList<>();
+                for (String s : countryArr) {
                     list.add(s);
                 }
-                countryMap.put(countryArr[0],list);
+                countryMap.put(countryArr[0], list);
             }
 
-            Map<String,ArrayList<String>> borderMap=new HashMap<>();
-            for(String border : l_MapFileContents.get("borders")){
-                String[] borderArr=border.split(" ");
-                ArrayList<String> list=new ArrayList<>();
-                for(String s : borderArr){
+            Map<String, ArrayList<String>> borderMap = new HashMap<>();
+            for (String border : l_MapFileContents.get("borders")) {
+                String[] borderArr = border.split(" ");
+                ArrayList<String> list = new ArrayList<>();
+                for (String s : borderArr) {
                     list.add(s);
                 }
-                borderMap.put(borderArr[0],list);
+                borderMap.put(borderArr[0], list);
             }
 
-            int continentIndex=1;
-            Map<String,ArrayList<String>> continentMap=new HashMap<>();
-            for(String continent : l_MapFileContents.get("Continents")){
-                String[] continentArr=continent.split(" ");
-                ArrayList<String> list=new ArrayList<>();
-                for(String s : continentArr){
+            int continentIndex = 1;
+            Map<String, ArrayList<String>> continentMap = new HashMap<>();
+            for (String continent : l_MapFileContents.get("Continents")) {
+                String[] continentArr = continent.split(" ");
+                ArrayList<String> list = new ArrayList<>();
+                for (String s : continentArr) {
                     list.add(s);
                 }
-                continentMap.put(Integer.toString(continentIndex),list);
+                continentMap.put(Integer.toString(continentIndex), list);
                 continentIndex++;
             }
 
 
-            l_MapFileContents.put("Territories",new ArrayList<>());
-            for(String countryId: borderMap.keySet()){
-                String territoryEntry=   countryMap.get(countryId).get(1)+" "+continentMap.get(countryMap.get(countryId).get(2)).get(0)+" ";
-                for(int neighbourIndex=1; neighbourIndex<borderMap.get(countryId).size();neighbourIndex++){
-                    String neighbourName=countryMap.get(borderMap.get(countryId).get(neighbourIndex)).get(1);
-                    if(neighbourIndex!=borderMap.size()-1){
-                        territoryEntry+=neighbourName+" ";
-                    }
-                    else{
-                        territoryEntry+=neighbourName;
+            l_MapFileContents.put("Territories", new ArrayList<>());
+            for (String countryId : borderMap.keySet()) {
+                String territoryEntry = countryMap.get(countryId).get(1) + " " + continentMap.get(countryMap.get(countryId).get(2)).get(0) + " ";
+                for (int neighbourIndex = 1; neighbourIndex < borderMap.get(countryId).size(); neighbourIndex++) {
+                    String neighbourName = countryMap.get(borderMap.get(countryId).get(neighbourIndex)).get(1);
+                    if (neighbourIndex != borderMap.size() - 1) {
+                        territoryEntry += neighbourName + " ";
+                    } else {
+                        territoryEntry += neighbourName;
                     }
                 }
                 l_MapFileContents.get("Territories").add(territoryEntry);
             }
-            Map<String, List<String>> l_CountryNeighbors = readCountriesFromFile(p_GameMap, l_MapFileContents.get("Territories"));
-            addNeighborsFromFile(p_GameMap, l_CountryNeighbors);
+            Map<String, List<String>> l_CountryNeighbors = readCountriesFromFile(p_GameMatrix, l_MapFileContents.get("Territories"));
+            addNeighborsFromFile(p_GameMatrix, l_CountryNeighbors);
         } catch (ValidationException | IOException e) {
             throw new ValidationException(e.getMessage());
         }
     }
 
+    /**
+     * A function to read the continents from file.
+     *
+     * @param p_GameMatrix The GameMatrix object which contains all the data
+     * @param p_ContinentArray The array of strings containing continents
+     */
+    public static void readContinentsFromFile(GameMatrix p_GameMatrix, List<String> p_ContinentArray) throws ValidationException {
+        p_ContinentArray.stream()
+                .map(l_InputString -> l_InputString.split(" "))
+                .filter(l_InputArray -> l_InputArray.length == 2)
+                .forEach(l_InputArray -> {
+                    try {
+                        p_GameMatrix.addContinent(l_InputArray[0], l_InputArray[1]);
+                    } catch (ValidationException e) {
+                        e.printStackTrace();
+                    }
 
-    public static void readContinentsFromFile(GameMap p_GameMap, List<String> p_ContinentArray) throws ValidationException {
-        for (String l_InputString : p_ContinentArray) {
-            String[] l_InputArray = l_InputString.split(" ");
-            if (l_InputArray.length == 2) {
-                p_GameMap.addContinent(l_InputArray[0], l_InputArray[1]);
-            }
-        }
+                });
     }
 
-
-    public static Map<String, List<String>> readCountriesFromFile(GameMap p_GameMap, List<String> p_CountryArray) throws ValidationException {
+    /**
+     * A function to read the countries from file.
+     *
+     * @param p_GameMatrix The GameMatrix object which contains all the data
+     * @param p_ContinentArray The array of strings containing countries
+     */
+    public static Map<String, List<String>> readCountriesFromFile(GameMatrix p_GameMatrix, List<String> p_CountryArray) throws ValidationException {
         Map<String, List<String>> l_CountryNeighbors = new HashMap<>();
-        for (String l_InputString : p_CountryArray) {
-            List<String> l_InputArray = Arrays.stream(l_InputString.split(" ")).collect(Collectors.toList());
-            if (l_InputArray.size() >= 2) {
-                p_GameMap.addCountry(l_InputArray.get(0), l_InputArray.get(1));
-                l_CountryNeighbors.put(l_InputArray.get(0), l_InputArray.subList(2, l_InputArray.size()));
-            }
-        }
-        return l_CountryNeighbors;
+        return p_CountryArray.stream()
+                .map(l_InputString -> Arrays.asList(l_InputString.split(" ")))
+                .filter(l_InputArray -> l_InputArray.size() >= 2)
+                .peek(l_InputArray -> {
+                    String countryName = l_InputArray.get(0);
+                    String continentName = l_InputArray.get(1);
+
+                    try {
+                        p_GameMatrix.addCountry(countryName, continentName);
+                    } catch (ValidationException e) {
+                        e.printStackTrace();
+                    }
+
+                    List<String> neighbors = l_InputArray.subList(2, l_InputArray.size());
+                    l_CountryNeighbors.put(countryName, neighbors);
+                })
+                .collect(Collectors.toMap(
+                        l_InputArray -> l_InputArray.get(0),
+                        l_InputArray -> l_InputArray.subList(2, l_InputArray.size())
+                ));
     }
 
-    public static void addNeighborsFromFile(GameMap p_GameMap, Map<String, List<String>> p_NeighborList) throws ValidationException {
+    /**
+     * A function to add neighbours.
+     *
+     * @param p_GameMatrix The GameMatrix object which contains all the data
+     * @param p_ContinentArray The list of strings containing neighbors of the country
+     */
+    public static void addNeighborsFromFile(GameMatrix p_GameMatrix, Map<String, List<String>> p_NeighborList) throws ValidationException {
+
         for (String l_Country : p_NeighborList.keySet()) {
             for (String l_Neighbor : p_NeighborList.get(l_Country)) {
-                p_GameMap.addNeighbor(l_Country, l_Neighbor);
+                p_GameMatrix.addNeighbor(l_Country, l_Neighbor);
             }
         }
+
+
     }
 }
