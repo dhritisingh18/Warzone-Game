@@ -10,15 +10,12 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+import constants.Consts;
+
 /**
  * This class executes the present phases and implementation of the Game Controller
  *
  *  * @author Mohammad Ehtesham Arif
- *  * @author Dhriti Singh
- *  * @author Rabia Tahir
- *  * @author Simran Simran
- *  * @author Ritik Gulati
- *  * @author Ritika Dhamija
  *  * @version 1.0.0
  *  */
 public class GamePlay implements GameHandler {
@@ -41,7 +38,7 @@ public class GamePlay implements GameHandler {
      * @return the following Game Phase
      * @throws ValidationFailure at validation failure
      */
-    public GameCycle start(GameCycle p_GameCycle) throws ValidationFailure {
+    public GameCycle begin(GameCycle p_GameCycle) throws ValidationFailure {
         while (true) {
             System.out.println("1. Enter 1 to view the set of commands" + "\n" + "2. Enter 2 to end");
             String l_Input = SCANNER.nextLine();
@@ -69,7 +66,7 @@ public class GamePlay implements GameHandler {
             for (String l_Command : l_InputList) {
                 String[] l_CmdArray = l_Command.split(" ");
                 switch (l_MainCmd.toLowerCase()) {
-                    case "loadmap": {
+                    case Consts.LOADMAP: {
                         if (l_CmdArray.length == 1) {
                             loadMap(l_MainCmd);
                         }
@@ -77,10 +74,10 @@ public class GamePlay implements GameHandler {
                     }
                     //Handles command gameplayer
 
-                    case "gameplayer": {
+                    case Consts.GAMEPLAYER: {
                         if (l_CmdArray.length > 0) {
                             switch (l_CmdArray[0]) {
-                                case "add": {
+                                case Consts.ADD: {
                                     if (l_CmdArray.length == 2) {
                                         d_GameMatrix.addPlayer(l_CmdArray[1]);
                                     } else {
@@ -88,7 +85,7 @@ public class GamePlay implements GameHandler {
                                     }
                                     break;
                                 }
-                                case "remove": {
+                                case Consts.REMOVE: {
                                     if (l_CmdArray.length == 2) {
                                         d_GameMatrix.removePlayer(l_CmdArray[1]);
                                     } else {
@@ -102,7 +99,7 @@ public class GamePlay implements GameHandler {
                     }
                     //Handles command assigncountries
 
-                    case "assigncountries": {
+                    case Consts.ASSIGNCOUNTRIES: {
                         if (d_GameMatrix.getPlayers().size() > 1) {
                             d_GameMatrix.assignCountries();
                             System.out.println("----------------------------Load Game Phase is over----------------------------");
@@ -113,11 +110,11 @@ public class GamePlay implements GameHandler {
                     }
                     //Handles command showmap
 
-                    case "showmap": {
+                    case Consts.SHOWMAP: {
                         d_GameMatrix.showMap();
                         break;
                     }
-                    case "exit": {
+                    case Consts.EXIT: {
                         return p_GameCycle.nextState(d_NextState);
                     }
                     //Print help commands
