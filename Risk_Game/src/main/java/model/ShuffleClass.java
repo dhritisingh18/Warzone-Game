@@ -2,7 +2,21 @@ package model;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Class with shuffle method implementation
+ * @author Mohammad Ehtesham Arif
+ * @author Dhriti Singh
+ * @author Rabia Tahir
+ * @author Simran Simran
+ * @author Ritik Gulati
+ * @author Ritika Dhamija
+ */
+
+
 public class ShuffleClass {
+    /**
+     * A function to implement shuffle operation and use of swapping as well for the same.
+     */
     public static <T> void knuthShuffle(List<T> list) {
         int n = list.size();
         Random random = new Random();
@@ -19,3 +33,5 @@ public class ShuffleClass {
         list.set(j, temp);
     }
 }
+
+
