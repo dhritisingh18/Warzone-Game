@@ -1,6 +1,8 @@
 package model.order;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 /**
@@ -17,9 +19,10 @@ public class Player {
     private int d_Id;
     private String d_PlayerName;
     private List<Country> d_CountriesCaptured = new ArrayList<>();
+    private Deque<Order> d_Orders = new ArrayDeque<>();
     private int d_ReinforcementArmies;
-    
 
+    public static List<Order> OrderList = new ArrayList<>();
 
     /**
      * Method to get the player ID
@@ -78,7 +81,32 @@ public class Player {
     }
 
 
-    
+    /**
+     * Get orders
+     *
+     * @return list of orders
+     */
+    public Deque<Order> getOrders() {
+        return d_Orders;
+    }
+
+    /**
+     *  set the orders
+     *
+     * @param p_Orders the list of orders
+     */
+    private void setOrders(Deque<Order> p_Orders) {
+        this.d_Orders = p_Orders;
+    }
+
+    /**
+     * A function to add the orders to the issue order list
+     *
+     * @param p_Order The order which is to be added
+     */
+    private void addOrder(Order p_Order) {
+        d_Orders.add(p_Order);
+    }
 
     /**
      *  Method to retrieve the reinforcement armies allocated to each player.
@@ -93,11 +121,49 @@ public class Player {
      * Method to set reinforcement armies for each player.
      * @param p_AssignedArmies number of armies assigned to player
      */
+
+
     
     public void setReinforcementArmies(int p_AssignedArmies) {
         this.d_ReinforcementArmies = p_AssignedArmies;
     }
 
+
+    /**
+     * A function to get the issue order from player and add to the order list
+     *
+     * @param p_Commands the type of order issued
+     */
+    public void issueOrder(String p_Commands) {
+        String[] l_CommandArr = p_Commands.split(" ");
+
+        String countryName = l_CommandArr[1];
+        int reinforcementArmies = Integer.parseInt(l_CommandArr[2]);
+
+        boolean isValidOrder = validateOrder(countryName, reinforcementArmies);
+
+        if (isValidOrder) {
+            Order order = OrderCreator.OrderCreation(l_CommandArr, this);
+            OrderList.add(order);
+            addOrder(order);
+            System.out.println("Order has been added to" + order.getOrderInfo().getLocation() + " with " + order.getOrderInfo().getNumberOfArmy() + " armies");
+            System.out.println("**********************************************************************************************");
+        }
+    }
+
+    private boolean validateOrder(String countryName, int reinforcementArmies) {
+        if (!checkIfCountryExists(countryName, this)) {
+            System.out.println("The country does not belong to you");
+            return false;
+        }
+
+        if (!deployArmiesForPlayer(reinforcementArmies)) {
+            System.out.println("You do not have enough Reinforcement Armies to deploy.");
+            return false;
+        }
+
+        return true;
+    }
 
     /**
      * Method to check if the country exists in the country list of the player
