@@ -34,7 +34,7 @@ public class OrderDeployment extends Order {
         }
         Player l_Player = getOrderInfo().getPlayer();
         String l_Location = getOrderInfo().getLocation();
-        Player l_ArmiesToDeploy = getOrderInfo().getPlayer();
+        int l_ArmiesToDeploy = getOrderInfo().getArmyCount();
         for(Country l_Country : l_Player.getCapturedCountries()){
             if(l_Country.getName().equals(l_Location)){
                 l_Country.deployArmies(l_ArmiesToDeploy);

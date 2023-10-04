@@ -42,7 +42,7 @@ public enum GameCycle {
          * @return MapBuilder Object
          */
         @Override
-        public GameController getController() {
+        public GameHandler getController() {
             return new MapEditor();
         }
     },
@@ -70,7 +70,7 @@ public enum GameCycle {
          * @return GamePlay Object
          */
         @Override
-        public GameController getController() {
+        public GameHandler getController() {
             return new GamePlay();
         }
     },
@@ -98,8 +98,8 @@ public enum GameCycle {
          * @return Reinforcement Object
          */
         @Override
-        public GameController getController() {
-            return new Reinforcement();
+        public GameHandler getController() {
+            return new ReinforcementPhase();
         }
     },
 
@@ -125,7 +125,7 @@ public enum GameCycle {
          * @return IssueOrder Object
          */
         @Override
-        public GameController getController() {
+        public GameHandler getController() {
             return new IssueOrder();
         }
     },
@@ -152,8 +152,8 @@ public enum GameCycle {
          * @return ExecuteOrder Object
          */
         @Override
-        public GameController getController() {
-            return new ExecuteOrder();
+        public GameHandler getController() {
+            return new OrderExecution();
         }
     },
 
@@ -179,7 +179,7 @@ public enum GameCycle {
          * @return null
          */
         @Override
-        public GameController getController() {
+        public GameHandler getController() {
             return null;
         }
     };
@@ -209,5 +209,5 @@ public enum GameCycle {
      *
      * @return Respective Controller object
      */
-    public abstract GameController getController();
+    public abstract GameHandler getController();
 }

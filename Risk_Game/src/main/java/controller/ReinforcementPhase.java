@@ -19,19 +19,19 @@ import java.util.stream.Collectors;
  * @author Ritika Dhamija
  * @version 1.0.0
  */
-public class Reinforcement implements GameController {
+public class ReinforcementPhase implements GameHandler {
     /**
      * next phase of game variable
      */
-    GamePhase d_NextGamePhase = GamePhase.IssueOrder;
+    GameCycle d_NextGamePhase = GameCycle.OrderIssuance;
     /**
      *  current phase of game variable
      */
-    GamePhase d_GamePhase;
+    GameCycle d_GamePhase;
     /**
      * Game map variable
      */
-    GameMap d_GameMap;
+    GameMatrix d_GameMap;
 
     /**
      *  Current Player variable
@@ -42,8 +42,8 @@ public class Reinforcement implements GameController {
      * Default constructor initialising the Game map data member with
      * {@code GameMap} singleton object
      */
-    public Reinforcement() {
-        d_GameMap = GameMap.getInstance();
+    public ReinforcementPhase() {
+        d_GameMap = GameMatrix.getInstance();
     }
 
     /**
@@ -54,7 +54,7 @@ public class Reinforcement implements GameController {
      * @throws ValidationFailure       If there are validation errors.
      * @throws InvalidExecutionFailure If there's an invalid execution.
      */
-    public GamePhase start(GamePhase currentGamePhase) throws ValidationFailure, InvalidExecutionFailure {
+    public GameCycle begin(GameCycle currentGamePhase) throws ValidationFailure, InvalidExecutionFailure {
         d_GamePhase = currentGamePhase;
         calculateReinforcements();
         return d_NextGamePhase;
@@ -80,7 +80,7 @@ public class Reinforcement implements GameController {
      * @throws InvalidExecutionFailure If there's an invalid execution.
      */
     public void setReinforcement() throws InvalidExecutionFailure {
-        if (!d_GamePhase.equals(GamePhase.Reinforcement)) {
+        if (!d_GamePhase.equals(GameCycle.Reinforcement)) {
             throw new InvalidExecutionFailure();
         }
 

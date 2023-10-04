@@ -133,39 +133,83 @@ public class Player {
 
 
     /**
-     * A function to get the issue order from player and add to the order list
+     * This function gets the issue order from player and adds it to the order list
      *
      * @param p_Commands the type of order issued
      */
+//    public void issueOrder(String p_Commands) {
+//        String[] l_CommandArr = p_Commands.split(" ");
+//
+//        String countryName = l_CommandArr[1];
+//        int reinforcementArmies = Integer.parseInt(l_CommandArr[2]);
+//
+//        boolean isValidOrder = validateOrder(countryName, reinforcementArmies);
+//
+//        if (isValidOrder) {
+//            Order order = OrderCreator.orderCreation(l_CommandArr, this);
+//            OrderList.add(order);
+//            addOrder(order);
+//            System.out.println("Order has been added to" + order.getOrderInfo().getLocation() + " with " + order.getOrderInfo().getNumberOfArmy() + " armies");
+//            System.out.println("**********************************************************************************************");
+//        }
+//    }
+    
+    
     public void issueOrder(String p_Commands) {
+        boolean l_IssueCommand = true;
         String[] l_CommandArr = p_Commands.split(" ");
+        int l_ReinforcementArmies = Integer.parseInt(l_CommandArr[2]);
+        if (!checkIfCountryExists(l_CommandArr[1], this)) {
+            System.out.println("The country does not belong to you");
+            l_IssueCommand = false;
+        }
+        if (!deployArmiesForPlayer(l_ReinforcementArmies)) {
+            System.out.println("You do have enough Reinforcement Armies to deploy.");
+            l_IssueCommand = false;
+        }
 
-        String countryName = l_CommandArr[1];
-        int reinforcementArmies = Integer.parseInt(l_CommandArr[2]);
-
-        boolean isValidOrder = validateOrder(countryName, reinforcementArmies);
-
-        if (isValidOrder) {
-            Order order = OrderCreator.OrderCreation(l_CommandArr, this);
-            OrderList.add(order);
-            addOrder(order);
-            System.out.println("Order has been added to" + order.getOrderInfo().getLocation() + " with " + order.getOrderInfo().getNumberOfArmy() + " armies");
-            System.out.println("**********************************************************************************************");
+        if (l_IssueCommand) {
+            Order l_Order = OrderCreator.orderCreation(l_CommandArr, this);
+            OrderList.add(l_Order);
+            addOrder(l_Order);
+            System.out.println("Order has been added to the list: deploy " + l_Order.getOrderInfo().getLocation() + " with " + l_Order.getOrderInfo().getArmyCount() + " armies");
+            System.out.println("=========================================================================================");
         }
     }
+    
+    
+    
+    
 
-    private boolean validateOrder(String countryName, int reinforcementArmies) {
-        if (!checkIfCountryExists(countryName, this)) {
-            System.out.println("The country does not belong to you");
-            return false;
+//    private boolean validateOrder(String countryName, int reinforcementArmies) {
+//        if (!checkIfCountryExists(countryName, this)) {
+//            System.out.println("The country does not belong to you");
+//            return false;
+//        }
+//
+//        if (!deployArmiesForPlayer(reinforcementArmies)) {
+//            System.out.println("You do not have enough Reinforcement Armies to deploy.");
+//            return false;
+//        }
+//
+//        return true;
+//    }
+    
+    /**
+     * This function checks if the country exists in the list of player assigned countries
+     *
+     * @param p_Country Country to be checked if present or not
+     * @param p_Player Player for whom the check is for
+     * @return true if country exists in the assigned country list else false
+     */
+    public boolean checkIfCountryExists(String p_Country, Player p_Player) {
+        List<Country> l_ListOfCountries = p_Player.getCapturedCountries();
+        for (Country l_Country : l_ListOfCountries) {
+            if (l_Country.getName().equals(p_Country)) {
+                return true;
+            }
         }
-
-        if (!deployArmiesForPlayer(reinforcementArmies)) {
-            System.out.println("You do not have enough Reinforcement Armies to deploy.");
-            return false;
-        }
-
-        return true;
+        return false;
     }
 
     /**

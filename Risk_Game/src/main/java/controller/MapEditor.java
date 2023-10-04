@@ -5,7 +5,7 @@ import model.GameMatrix;
 import model.GameCycle;
 import utils.MapReader;
 import utils.MapValidation;
-import utils.ValidationException;
+import utils.ValidationFailure;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -26,7 +26,7 @@ public class MapEditor implements GameHandler {
     private final Scanner SCANNER = new Scanner(System.in);
     private final List<String> CLI_CmdS = Arrays.asList("editcontinent", "editcountry", "editneighbor", "showmap", "savemap", "editmap", "validatemap");
     GameMatrix d_GameMatrix;
-    GameCycle d_NextState = GameCycle.LoadGame;
+    GameCycle d_NextState = GameCycle.GameLoad;
 
     /**
      * This is the default constructor
@@ -40,10 +40,10 @@ public class MapEditor implements GameHandler {
      * save of map from console Cmds.
      *
      * @param p_GamePhase Parameter of the enum GamePhase is passed
-     * @throws ValidationException when validation fails
+     * @throws ValidationFailure when validation fails
      */
     @Override
-    public GameCycle begin(GameCycle p_GamePhase) throws ValidationException {
+    public GameCycle begin(GameCycle p_GamePhase) throws ValidationFailure {
         while (true) {
             System.out.println("Please Enter map operation:" + "\n" + "1. Enter 1 to view the list of operations" + "\n" + "2. Enter 2 to end map creation and move to game phase");
             String l_UserInput = SCANNER.nextLine();
@@ -81,7 +81,7 @@ public class MapEditor implements GameHandler {
                                     if (l_InputCmdArray.length == 3) {
                                         d_GameMatrix.addContinent(l_InputCmdArray[1], l_InputCmdArray[2]);
                                     } else {
-                                        throw new ValidationException();
+                                        throw new ValidationFailure();
                                     }
                                     break;
                                 }
@@ -89,7 +89,7 @@ public class MapEditor implements GameHandler {
                                     if (l_InputCmdArray.length == 2) {
                                         d_GameMatrix.removeContinent(l_InputCmdArray[1]);
                                     } else {
-                                        throw new ValidationException();
+                                        throw new ValidationFailure();
                                     }
                                     break;
                                 }
@@ -108,7 +108,7 @@ public class MapEditor implements GameHandler {
                                 if (l_InputCmdArray.length == 3) {
                                     d_GameMatrix.addCountry(l_InputCmdArray[1], l_InputCmdArray[2]);
                                 } else {
-                                    throw new ValidationException();
+                                    throw new ValidationFailure();
                                 }
                                 break;
                             }
@@ -116,7 +116,7 @@ public class MapEditor implements GameHandler {
                                 if (l_InputCmdArray.length == 2) {
                                     d_GameMatrix.removeCountry(l_InputCmdArray[1]);
                                 } else {
-                                    throw new ValidationException();
+                                    throw new ValidationFailure();
                                 }
                                 break;
                             }
@@ -134,7 +134,7 @@ public class MapEditor implements GameHandler {
                                 if (l_InputCmdArray.length == 3) {
                                     d_GameMatrix.addNeighbor(l_InputCmdArray[1], l_InputCmdArray[2]);
                                 } else {
-                                    throw new ValidationException();
+                                    throw new ValidationFailure();
                                 }
                                 break;
                             }
@@ -142,7 +142,7 @@ public class MapEditor implements GameHandler {
                                 if (l_InputCmdArray.length == 3) {
                                     d_GameMatrix.removeNeighbor(l_InputCmdArray[1], l_InputCmdArray[2]);
                                 } else {
-                                    throw new ValidationException();
+                                    throw new ValidationFailure();
                                 }
                                 break;
                             }
@@ -196,7 +196,7 @@ public class MapEditor implements GameHandler {
                      */
 
                     case "exit": {
-                        d_GameMatrix.flushGameMatrix();
+                        d_GameMatrix.clearGameMap();
                         return p_GamePhase.nextState(d_NextState);
                     }
                     //Print the Cmds for help
