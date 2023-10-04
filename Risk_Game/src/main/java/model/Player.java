@@ -1,9 +1,12 @@
-package model.order;
+package model;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
+
+import model.order.Order;
+import model.order.OrderCreator;
 
 /**
  * Class to set and get Player details
