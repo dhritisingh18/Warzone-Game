@@ -4,7 +4,7 @@ package model;
  * This interface contains {@code start} method for the
  * game phase controllers
  *
- * @author Rabia Tahir
+ * @author Dhriti Singh
  * @version 1.0
  */
 

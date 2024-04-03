@@ -1,0 +1,3263 @@
+[The Map]
+
+[Continents Involved]
+Northern_Italy 5
+Austria-Hungary 5
+Prussia 5
+Scandinavia 5
+Spain 5
+Russia 5
+Greece 5
+Southern_Italy 5
+Epypt 5
+Turkey 5
+Belgium 5
+Poland 5
+Portugale 5
+Britian 5
+Georgia 5
+France 5
+North_Africa 5
+Germany 5
+[Territories]
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+r2 Russia ah16 ah9 gc12 ah10 gc11 r3
+b10 Britian b2 b9 b11
+r3 Russia r2 r4 r5 ah16 gc12
+r4 Russia r9 r5 ah16 r6 r3 r10
+b12 Britian b9 f13 b11 sp1
+r5 Russia r4 r6 r3 gg4
+b11 Britian b9 b12 b10
+r6 Russia r9 r4 r5 gg4
+f10 France f9 f11 f1 f13
+r7 Russia r9 r8 gg4
+r8 Russia r9 r15 r14 r7 r13
+f12 France f15 f11 f13
+r9 Russia r4 r6 r8 r7 r13 r11 r10
+f11 France f7 f12 f9 f8 f10
+sp11 Spain sp10 sp7 sp12 sp9 sp13 sp8
+f14 France sp5 f15 sp4 f13
+sp10 Spain na6 sp9 sp11 si6
+f13 France f14 f15 f12 f10 b12
+gm1 Germany s9 pol1 bl1 pol2 gm3 gm2
+sp13 Spain sp6 sp12 sp15 sp11 sp14
+por1 Portugale sp6 por2 sp2 sp1
+f16 France f15 ni1 ni2 si6 ni3
+sp12 Spain sp15 sp13 sp11 sp16
+por2 Portugale por3 sp6 por4 sp14 por1
+f15 France f14 sp5 f7 ni1 f12 sp9 f16 f13
+gm3 Germany gm1 gm4 pol2 gm6 gm2 gm7
+gm2 Germany gm1 bl1 gm3 bl2 bl4 gm7
+gm5 Germany ah2 gm4 ah1 ah12 gm6 ah13
+j8 Epypt e6 e7 e11 e9
+b1 Britian s1 b2
+gm4 Germany pol10 pol2 pol3 gm3 gm5 gm6 ah13
+r10 Russia r9 r4 ah16 r11 pol8
+b2 Britian b1 b3 b10
+gm7 Germany gm8 gm3 f5 bl4 f6 gm6 gm2
+b3 Britian b2 b4 s2 b6
+gm6 Germany gm8 gm4 gm3 gm5 ah1 gm7
+b4 Britian b6 bl3 b3 b5
+r12 Russia pru4 r13 pol7 r11
+r11 Russia r9 r12 r13 pol7 pol8 r10
+b5 Britian b7 b4 f3 b6
+gm8 Germany ni1 ni4 ni5 ni2 ah1 f6 gm6 gm7
+b6 Britian b7 b4 b8 b9 b3 b5
+r14 Russia r15 r17 r8 r13 r16
+b7 Britian b8 b6 f1 b5 f2
+r13 Russia r9 r12 r14 pru4 r8 r16 r11
+b8 Britian b7 b6 b9
+r16 Russia pru2 r1 r17 pru4 r14 r13
+b9 Britian b8 b6 b11 b12 b10
+r15 Russia r17 r14 r8
+r18 Russia r1 s5
+r17 Russia r15 r1 r14 r16
+s1 Scandinavia b1 s2
+s2 Scandinavia s1 s8 b3 s3
+s3 Scandinavia s2 s4 s6
+s4 Scandinavia s5 s3 pru1
+na10 North_Africa e1 na9
+s5 Scandinavia r18 s4
+s6 Scandinavia pol4 s7 s3
+s7 Scandinavia s9 s6 s8
+s8 Scandinavia s9 s2 s7
+s9 Scandinavia pol1 gm1 s8 s7
+bl1 Belgium gm1 bl2 gm2
+bl3 Belgium b4 f3 bl2 bl4
+bl2 Belgium bl1 bl3 bl4 gm2
+bl4 Belgium f3 f5 f4 bl3 bl2 gm2 gm7
+t1 Turkey e4 t2 e9
+t2 Turkey e10 t8 t1 t5 t6 t7 t3
+t3 Turkey t5 t4 t2 gc1
+t4 Turkey t5 t3 gc2 t13
+t5 Turkey t4 t2 t6 t12 t3 t13
+t6 Turkey t5 t11 t2 t7 t12
+t7 Turkey t8 t9 t11 t2 t6 t10
+t8 Turkey e10 t9 t2 e11 t7
+e11 Epypt e10 t8 j8 e9
+t9 Turkey t8 gg1 t10 t7
+e10 Epypt t8 t2 e9 e11
+gg1 Georgia t9 gg2 t10
+gg3 Georgia gg2 t11 gg4 gc9
+gg2 Georgia gg1 gg3 gg4
+gg4 Georgia r5 gg2 r6 r7 gg3
+e1 Epypt na10 e2
+e2 Epypt e3 e1 e4
+e3 Epypt e4 e5 e2
+e4 Epypt e3 t1 e5 gc1 e2
+e5 Epypt e3 e4 e6 e7
+e6 Epypt e5 e7 j8
+pol10 Poland ah14 gm4 pol3 pol9 ah13
+e7 Epypt e6 e5 j8 e9
+sp2 Spain sp6 por1 sp1 sp3
+sp15 Spain sp17 sp12 sp13 por4 sp14 sp16
+por3 Portugale por4 por2
+e9 Epypt e10 t1 e7 j8 e11
+sp1 Spain por1 b12 sp2
+sp14 Spain sp6 sp15 sp13 por4 por2
+por4 Portugale por3 sp15 sp14 por2
+sp4 Spain f14 sp5 sp8 sp3
+sp17 Spain sp15 na1 sp16
+sp3 Spain sp7 sp6 sp4 sp2
+sp16 Spain sp17 sp12 sp15
+sp6 Spain sp7 sp13 sp14 por1 por2 sp2 sp3
+sp5 Spain f14 f15 sp9 sp4 sp8
+sp8 Spain sp7 sp5 sp9 sp11 sp4
+sp7 Spain sp6 sp11 sp8 sp3
+sp9 Spain sp10 f15 sp5 sp11 sp8
+f1 France b7 f9 f10 f2
+f2 France b7 f3 f9 f8 f1
+f3 France f8 bl3 f4 bl4 b5 f2
+f4 France f7 f3 f8 f5 bl4 f6
+f5 France f4 bl4 f6 gm7
+f6 France f7 gm8 ni1 f5 f4 gm7
+f7 France f15 ni1 f11 f8 f4 f6
+t10 Turkey t9 t11 gg1 t7
+f8 France f7 f9 f3 f11 f4 f2
+f9 France f11 f8 f10 f1 f2
+t12 Turkey t5 t11 t6 gc9 t13
+t11 Turkey t6 t10 t7 t12 gg3
+t13 Turkey t5 t4 t12 gc9
+si1 Southern_Italy ni4 si2 si3 ni6
+si3 Southern_Italy si1 si2 si4
+si2 Southern_Italy si1 si3 ni6
+si5 Southern_Italy na8 si4 si6 gc1
+si4 Southern_Italy gc4 si3 si5
+ah16 Austria-Hungary r4 r2 r3 ah15 pol8 r10
+si6 Southern_Italy sp10 na7 f16 ni6 si5
+ah13 Austria-Hungary pol10 ah14 gm4 gm5 ah12
+ah12 Austria-Hungary ah2 ah14 gm5 ah3 ah13 ah11 ah6
+ah15 Austria-Hungary ah16 ah14 ah10 pol9 pol8 ah11
+ah14 Austria-Hungary pol10 ah15 ah12 pol9 ah13 ah11
+ah11 Austria-Hungary ah7 ah14 ah10 ah15 ah8 ah12 ah6
+ah10 Austria-Hungary r2 ah9 ah15 ah8 ah11
+pol1 Poland s9 gm1 pol3 pol2 pol4
+pol2 Poland gm1 pol1 gm4 gm3
+pol3 Poland pol1 pol10 gm4 pol4 pol9 pol5
+pol4 Poland pol1 s6 pol3 pol5
+pol9 Poland pol6 pol10 ah14 pol3 ah15 pol5 pol8
+pol5 Poland pol6 pol3 pol4 pol9
+pol6 Poland pru4 pru3 pol7 pol9 pol5 pol8
+pol7 Poland r12 pol6 pru4 r11 pol8
+pol8 Poland pol6 ah16 ah15 pol9 pol7 r11 r10
+gc10 Greece gc12 gc8 gc11 gc9
+gc11 Greece r2 ah9 gc12 ah8 gc7 gc10
+gc12 Greece r2 gc11 r3 gc10
+gc1 Greece e4 t3 si5 gc2
+pru3 Prussia pol6 pru2 pru4
+pru4 Prussia r12 pol6 pru2 pru3 r13 r16 pol7
+gc3 Greece gc4 gc8 gc2
+ni2 Northern_Italy ni1 gm8 ni4 f16 ni3
+gc2 Greece gc4 t4 gc3 gc1
+ni1 Northern_Italy f15 f7 gm8 ni2 f16 f6
+ni4 Northern_Italy si1 gm8 ni5 ni2 ni6 ni3
+gc5 Greece gc4 gc6 gc7
+ni3 Northern_Italy ni4 ni2 f16 ni6
+gc4 Greece gc8 si4 gc5 gc3 gc2
+ni6 Northern_Italy si1 ni4 si2 si6 ni3
+gc7 Greece ah7 gc8 gc11 ah8 gc5
+ni5 Northern_Italy gm8 ah2 ni4 ah1 ah4
+gc6 Greece ah5 ah7 gc5
+gc9 Greece gc8 t12 gg3 gc10 t13
+gc8 Greece gc4 gc7 gc3 gc9 gc10
+na2 North_Africa na1 na3 na4
+na1 North_Africa sp17 na2 na4
+na4 North_Africa na5 na2 na1 na3
+na3 North_Africa na5 na6 na7 na2 na9 na4
+na6 North_Africa sp10 na5 na7 na3
+na5 North_Africa na6 na3 na4
+na8 North_Africa na7 na9 si5
+na7 North_Africa na6 na8 si6 na9 na3
+na9 North_Africa na8 na7 na3 na10
+ah2 Austria-Hungary ni5 gm5 ah12 ah4 ah1 ah3
+pru1 Prussia pru2 r1 s4
+ah1 Austria-Hungary gm8 ah2 ni5 gm5 gm6
+pru2 Prussia r1 pru4 pru3 r16 pru1
+ah4 Austria-Hungary ah5 ah2 ni5 ah3
+ah3 Austria-Hungary ah2 ah12 ah4 ah6
+ah6 Austria-Hungary ah5 ah7 ah12 ah3 ah11
+ah5 Austria-Hungary ah7 gc6 ah4 ah6
+ah8 Austria-Hungary ah7 ah9 ah10 gc11 gc7 ah11
+ah7 Austria-Hungary ah5 gc6 ah8 gc7 ah11 ah6
+ah9 Austria-Hungary r2 ah10 gc11 ah8
+r1 Russia pru2 r17 r18 r16 pru1
+

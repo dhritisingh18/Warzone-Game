@@ -11,12 +11,7 @@ import java.util.List;
  * from current state.</p>
  * Also provides respective {@code controller object} for each state.
  *
- * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
- * @author Rabia Tahir
- * @author Simran Simran
- * @author Ritik Gulati
- * @author Ritika Dhamija
  * @version 1.0.0
  */
 public enum GameCycle {

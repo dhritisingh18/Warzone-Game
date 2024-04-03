@@ -1,0 +1,52 @@
+import model.GameCycle;
+import model.GameHandler;
+import utils.InvalidExecutionFailure;
+import utils.ValidationFailure;
+
+import java.util.Objects;
+
+/**
+ * This class is used to start the game with the Map Editor Phase
+ *
+ * @author Dhriti Singh
+ * @version 1.0.0
+ */
+public class GameEngine {
+    GameCycle d_GameCycle = GameCycle.MapBuilder;
+
+    /**
+     * Main method to run the game
+     *
+     * @param args passed to main if used in command line
+     */
+    public static void main(String[] args) {
+        new GameEngine().start();
+    }
+
+    /**
+     * The function which runs the whole game in phases
+     */
+    public void start() {
+        try {
+            if (Objects.isNull(d_GameCycle)) {
+                throw new Exception("Game Cycle is Null");
+            }
+            if (Objects.nonNull(d_GameCycle) && !d_GameCycle.equals(GameCycle.GameExit)) {
+                GameHandler l_GameController = d_GameCycle.getController();
+                if (Objects.isNull(l_GameController)) {
+                    throw new Exception("There is no controller");
+                }
+                d_GameCycle = l_GameController.begin(d_GameCycle);
+                System.out.println(d_GameCycle + " Phase has been Entered");
+                System.out.println("-----------------------------------------------------------------------------------------");
+                start();
+            }
+        } catch (ValidationFailure | InvalidExecutionFailure p_Exception) {
+            System.err.println(p_Exception.getMessage());
+            start();
+        } catch (Exception p_Exception) {
+            p_Exception.printStackTrace();
+        }
+    }
+
+}

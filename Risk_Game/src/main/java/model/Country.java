@@ -5,12 +5,7 @@ import java.util.Set;
 
 /**
  * Class to set and get country and it's properties
- * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
- * @author Rabia Tahir
- * @author Simran Simran
- * @author Ritik Gulati
- * @author Ritika Dhamija
  * @version 1.0.0
  */
 public class Country {

@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Class with all the ways to issue order
  *
- * @author Mohammad Ehtesham Arif
+ * @author Dhriti
  * @version 1.0.0
  */
 public class IssueOrder implements GameHandler {
@@ -42,9 +42,9 @@ public class IssueOrder implements GameHandler {
                 }
                 System.out.println("Player:" + l_Player.getName() + "; Armies assigned are: " + l_Player.getReinforcementArmies());
                 System.out.println("The countries that require armies to be assigned are: ");
-                l_Player.getCapturedCountries().forEach(country -> {
-                    System.out.println(country.getName() + " ");
-                });
+                for(Country l_Country : l_Player.getCapturedCountries() ) {
+                    System.out.println(l_Country.getName() + " ");
+                }
                 System.out.println("=========================================================================================");
                 String l_Commands = readFromPlayer();
                 l_Player.issueOrder(l_Commands);

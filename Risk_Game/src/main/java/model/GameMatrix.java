@@ -15,12 +15,7 @@ import java.util.stream.Collectors;
 /**
  * Class with all the game matrix properties
  *
- * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
- * @author Rabia Tahir
- * @author Simran Simran
- * @author Ritik Gulati
- * @author Ritika Dhamija
  * @version 1.0.0
  */
 

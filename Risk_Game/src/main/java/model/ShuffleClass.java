@@ -4,12 +4,7 @@ import java.util.Random;
 
 /**
  * Class with shuffle method implementation
- * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
- * @author Rabia Tahir
- * @author Simran Simran
- * @author Ritik Gulati
- * @author Ritika Dhamija
  */
 
 

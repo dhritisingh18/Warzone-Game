@@ -6,12 +6,7 @@ import model.Player;
 /**
  * Class OrderDeployment used to execute the orders, which is a child of Order
  *
- *  * @author Mohammad Ehtesham Arif
  *  * @author Dhriti Singh
- *  * @author Rabia Tahir
- *  * @author Simran Simran
- *  * @author Ritik Gulati
- *  * @author Ritika Dhamija
  *  * @version 1.0.0
  *  */
 public class OrderDeployment extends Order {

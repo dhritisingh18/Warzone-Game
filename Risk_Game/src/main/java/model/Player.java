@@ -10,12 +10,7 @@ import model.order.OrderCreator;
 
 /**
  * Class to set and get Player details
- * @author Mohammad Ehtesham Arif
  * @author Dhriti Singh
- * @author Rabia Tahir
- * @author Simran Simran
- * @author Ritik Gulati
- * @author Ritika Dhamija
  * @version 1.0.0
  */
 public class Player {

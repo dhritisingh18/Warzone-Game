@@ -3,7 +3,7 @@ package utils;
 /**
  * Exception class for invalid execution of commands in the game stage
  *
- * @author Simran Simran
+ * @author Dhriti Singh
  */
 public class InvalidExecutionFailure extends Exception {
 
