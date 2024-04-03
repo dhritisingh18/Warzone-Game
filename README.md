@@ -41,3 +41,26 @@ To use this Risk game implementation, follow these steps:
 
 - Comprehensive JavaDoc comments are provided throughout the codebase to document classes, methods, and their parameters.
 - Unit tests using JUnit are implemented to ensure the correctness of critical game functionalities. Tests cover various scenarios, including player turns, card interactions, and map generation.
+
+
+## Screenshots of Outputs
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/2cd30235-07a4-4b5b-9d02-5949442f6e05)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/42edf0a4-19bc-4b1f-8d7c-d4444d35fe5d)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/2baf50fb-1b49-44ef-a9e8-618ce463d873)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/b885873c-5975-4f37-9e7e-c62103166f09)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/f9b64e03-c218-43f2-bd4a-1cd56e2c733b)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/1cae9a76-f7d9-456b-b46f-5862a402794e)
+
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/1a61959c-f42c-4e54-bacc-5025da274699)
+
+
+
+
+
+
