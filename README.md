@@ -1,19 +1,5 @@
 # Risk Game Implementation
 
-## General Description
-
-This project involves building a challenging Java program for a team of 5 members. The project is divided into three components:
-
-1. **First and Second Intermediate Project Delivery:** These are intermediate operational builds of the software, demonstrating important software features.
-   
-2. **Final Project Delivery:** This is the demonstration of the finalized version of the software. During project deliveries, the team must showcase the implementation of Java features and tools presented in lectures.
-
-All project deliveries take place in the laboratory, where the team presents implemented features to markers following a pre-circulated grading sheet.
-
-The project description intentionally leaves out details, requiring the team to:
-- Elicit and formulate missing details before implementation.
-- Limit the project scope based on available time.
-- Make design decisions and select implementation tools through investigations and discussions.
 
 ## Problem Statement
 
