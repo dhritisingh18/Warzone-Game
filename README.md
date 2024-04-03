@@ -5,6 +5,8 @@
 
 The project involves building a simple "Risk" computer game compatible with the rules and map files of the "Warzone" version of Risk, which can be downloaded from [Warzone](https://www.warzone.com/). Warzone's game setup includes a connected graph map representing a world map, with each node as a country and each edge representing adjacency between countries. Players place armies on countries they own and attack adjacent countries to conquer them, aiming to conquer all countries on the map.
 
+![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/c13cb06b-6a62-4204-bb49-ec5f417a4373)
+
 ## Map
 
 The game map is a connected graph where each node represents a territory owned by a player, with edges representing adjacency between territories. Territories are grouped into continents, each with a control value determining the number of armies per turn given to a player controlling the continent. The game allows playing on any connected graph defined by the user, saved as a text file representation, and loaded during play.
