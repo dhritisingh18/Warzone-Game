@@ -47,8 +47,6 @@ To use this Risk game implementation, follow these steps:
 
 ![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/2cd30235-07a4-4b5b-9d02-5949442f6e05)
 
-![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/42edf0a4-19bc-4b1f-8d7c-d4444d35fe5d)
-
 ![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/2baf50fb-1b49-44ef-a9e8-618ce463d873)
 
 ![image](https://github.com/dhritisingh18/Warzone-Game/assets/56754119/b885873c-5975-4f37-9e7e-c62103166f09)
